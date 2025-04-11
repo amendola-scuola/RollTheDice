@@ -1,4 +1,4 @@
-package com.example.rollthedice5bi
+package com.example.rollthedice
 
 import android.content.Intent
 import android.os.Bundle
@@ -26,8 +26,9 @@ class MainActivity : AppCompatActivity() {
             var mioRandom = estraiNumero()
             messaggioToast("ESTRATTO NUMERO $mioRandom!")
 
-            loadFaces()
-            setImage(mioRandom)
+            /*loadFaces()
+            setImage(mioRandom)*/
+
             lanciaIntent(mioRandom)
         })
     }
@@ -53,7 +54,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun lanciaIntent(mioRandom: Int) {
-        var mioIntent = Intent(this, SecondActivity::class.java)
+        var mioIntent = Intent(this,
+            SecondActivity::class.java)
         mioIntent.putExtra("NUMERO", mioRandom)
         startActivity(mioIntent)
     }

@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <ImageView
+        android:id="@+id/second_activity_image"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_activity_title"
+        app:srcCompat="@drawable/dices" />
+
     <TextView
         android:id="@+id/second_activity_title"
         android:layout_width="wrap_content"
@@ -14,8 +24,9 @@
         android:text="Estratto numero: "
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/second_activity_image"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

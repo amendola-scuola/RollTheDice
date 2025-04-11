@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.rollthedice5bi"
+    namespace = "com.example.rollthedice"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.rollthedice5bi"
+        applicationId = "com.example.rollthedice"
         minSdk = 27
         targetSdk = 35
         versionCode = 1

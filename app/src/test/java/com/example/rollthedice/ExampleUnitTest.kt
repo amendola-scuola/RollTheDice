@@ -1,4 +1,4 @@
-package com.example.rollthedice5bi
+package com.example.rollthedice
 
 import org.junit.Test
 
